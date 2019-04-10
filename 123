@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Отлично!: указаны все минимально необходимые meta-теги, указан язык страницы,
+        заголовок и стили подключены внешним файлом -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Научиться учиться</title>
+</head>
+<body>
+    <div class="page">
+        <!-- Отлично!: Вы использовали семантичные теги header/main/footer,
+            такую разметку проще читать как разработчику так и поисковым роботам, разделение блоков тегами section -->
+        <header class="header">
+            <div class="header__logo logo"></div>
+            <!-- Нужно исправить!: Классы указаны верно, БЭМ методология соблюдается, здорово! Но тэги для заголовков h1 - h6, используйте их
+                в зависимости от иерархии на странице, на 21 строке тег div нужно заменить на h1, не забудьте сбросить стандартные отступы h1,
+                если это еще не сделано в файле normalize.css -->
+            <div class="header__title">Научиться учиться</div>
+
+            <!-- Рекомендация и совет от разработчика будущему разработчику: Не стесняйтесь переносить переводами строк длинный текст
+               в HTML разметке, это ни как не влияет на данное ревью, но код не влезающий на весь экран редактора тяжело читать, переносы внутри редактора
+               (через enter) никак не влияют на разметку, например ниже есть длинные тексты и вот здесь тег a можно перенести на новую строку) -->
+            <div class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a class=link href="#">Узнать</a></div>
+            <img class="header__main-illustration" src="images/two_again.png"></img>
+            <div class="header__square-pic"></div>
+        </header>
+        <main class="content">
+            <section class="description">
+            <div class="two-columns">
+                <!-- Нужно исправить: Главные проблемы в обучении — это заголовок должен быть соответствующий тег h2, например -->
+                <div class="two-columns__brief">Главные проблемы в обучении</div>
+                <div class="two-columns__main-text">
+                    <!-- Можно лучше: читайте рекомендацию о переносе текста в исходном коде выше^^ -->
+                    <p class="two-columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.
+                    <br><span class="two-columns__span-bold"><strong>Вывод:</strong> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?</span><br />Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>    
+                </div>
+            </div>        
+            </section>
+            <section class="digits">
+                <!-- Нужно исправить: Это заголовок — тег h  -->
+                <div class="section-title section__title_digits">Цифры и факты</div>
+                <div class="section-subtitle section__subtitle_digits">Про учёбу и мозг</div>
+                <div class="table table__digits">
+                    <div class="table__cell">
+                            <div class="table__heading">86 миллиардов</div>
+                            <p class="table__text">Число нейронов в мозге человека</p>
+                    </div>
+                    <div class="table__cell">
+                            <div class="table__heading">2.1 миллиарда</div>
+                            <p class="table__text">Число нуждающихся в повышении квалификации</p><p class="table__text"></p>Всемирный Банк, 2017</p>
+                    </div>
+                    <div class="table__cell">
+                            <div class="table__heading">1000 терабайт</div>
+                            <p class="table__text">Объём памяти человека</p>
+                    </div>
+                    <div class="table__cell">
+                            <div class="table__heading">500 триллионов</div>
+                            <p class="table__text">Число ответственных за обучение нервных синапсов у взрослого человека</p>
+                    </div>
+                    <div class="table__cell">
+                            <div class="table__heading">420 миллионов</div>
+                            <p class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</p><p class="table__text">Всемирный Банк, 2017</p>
+                    </div>
+                    <div class="table__cell">
+                            <div class="table__heading">17–20 лет</div>
+                            <p class="table__text">Пик обучаемости</p>
+                    </div>
+                    <div class="table__cell">
+                            <div class="table__heading">1885 год</div>
+                            <p class="table__text">Открытие кривой забывания</p>
+                    </div>
+                    <div class="table__cell">
+                            <div class="table__heading">1889 год</div>
+                            <p class="table__text">Открытие условного рефлекса</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="feinman">
+                <!-- Нужно исправить: Это заголовок — тег h  -->
+                <div class="feinman__title">Метод Фейнмана</div>
+                <div class="feinman__subtitle">Выучить и не забыть.
+                    <a href="#" class="feinman__link">Подробнее &rarr;</a>
+                </div>
+            </section>
+            
+            <section class="kaufman">
+                <div class="section-title section-title_white">Принципы обучения</div>
+                <div class="section-subtitle section-subtitle_white">от Джоша Кауфмана</div>
+                <img class="kaufman__triangle" src="images/triangle.svg">
+                <div class="table table_white">
+                    <div class="table__cell table__cell_white">
+                        <div class="table__heading heading_white">1</div>
+                        <p class="table__text text_white">Выберите привлекательный проект.</p>
+                    </div>
+                    <div class="table__cell table__cell_white">
+                        <div class="table__heading heading_white">2</div>
+                        <p class="table__text text_white">Сосредоточьтесь на каком-то одном навыке.</p>
+                    </div>
+                    <div class="table__cell table__cell_white">
+                        <div class="table__heading heading_white">3</div>
+                        <p class="table__text text_white">Определите целевой уровень мастерства.</p>
+                    </div>
+                    <div class="table__cell table__cell_white">
+                        <div class="table__heading heading_white">4</div>
+                        <p class="table__text text_white">Разбейте навык на элементы.</p>
+                    </div>
+                    <div class="table__cell table__cell_white">
+                        <div class="table__heading heading_white">5</div>
+                        <p class="table__text text_white">Приготовьте всё необходимое для занятий.</p>
+                    </div>
+                    <div class="table__cell table__cell_white">
+                        <div class="table__heading heading_white">6</div>
+                        <p class="table__text text_white">Устраните препятствия для занятий.</p>
+                    </div>
+                    <div class="table__cell table__cell_white">
+                        <div class="table__heading heading_white">7</div>
+                        <p class="table__text text_white">Выделите специальное время для занятий.</p>
+                    </div>
+                    <div class="table__cell table__cell_white">
+                        <div class="table__heading heading_white">8</div>
+                        <p class="table__text text_white">Создайте быстрые петли обратной связи.</p>
+                    </div>
+                    <div class="table__cell table__cell_white">
+                        <div class="table__heading heading_white">9</div>
+                        <p class="table__text text_white">Занимайтесь по расписанию, короткими интенсивными интервалами.</p>
+                    </div>
+                    <div class="table__cell table__cell_white">
+                        <div class="table__heading heading_white">10</div>
+                        <p class="table__text text_white">Уделяйте внимание количеству и скорости.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__columns">
+                <div class="footer__columns_copyright">
+                    <div class="footer__logo logo"></div>
+                    <!-- Отлично: Нравится, как вставлена иконка копирайта -->
+                    <div class="footer__author">&copy; 2019. Виктор Абанькин</div>
+                </div>
+                <div class="footer__columns_two-colums">
+                    <div class="footer__columns_info">
+                        <div class="footer__column-heading">О Практикуме</div>
+                        <div class="footer__links">
+                            <!-- Можно лучше: для подобных конструкций в верстке существуют списки ul/ol и li, это не критичное исправление
+                            и не влияет на ревью, но хорошо если вы почитаете о них и будете знать и отличать визуально, где использовать списки
+                            а где просто div'ы -->
+                            <a class="footer__link" href="#">Главная</a>
+                            <a class="footer__link" href="#">Концепция</a>
+                            <a class="footer__link" href="#">Наставники</a>
+                        </div>
+                    </div>
+                </div>   
+                    <div class="footer__columns_social">
+                        <div class="footer__column-heading">Соцсети</div>
+                        <div class="footer__social-links">
+                            <!-- Нужно исправить: отступы пробелами это не лучший вариант создавать отступы в верстке,
+                            в этой ситуации лучше положить социальные сети такие как Facebook, Вконтакте, Instagram в строчный span и задать
+                            либо им margin-left, либо social_img margin-right. Пробелы зависят от шрифта (следовательно устройства), масштаба
+                            и типографики, margin'ы всегда дадут вам верный отступ -->
+                            <a class="footer__link" href="#"><img src="images/facebook_white.svg" class="social_img">  Facebook</a>
+                            <a class="footer__link" href="#"><img src="images/vk_white.svg" class="social_img">  Вконтакте</a>
+                            <!-- Можно лучше: кажется, что неиспользуемый класс "c", возможно он не нужен здесь, возможно просто опечатка -->
+                            <a class="footer__link" href="#"><img src="images/instagram_white.svg" class="c">  Instagram</a>
+                        </div>
+                    </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+<!-- Общие впечатления и резюме:
+Видно, что в работу вложенно много труда. В целом неплохо, но есть несколько критичных ошибок которые вам нужно исправить,
+для того чтобы работа прошла ревью.
+
+Глобальная ошибка не указанная в разметке это центрирование блока page, точнее с центрированием всем в порядке. max-width: 1600px + margin: 0 auto
+— это рабочий вариант, однако для того чтобы дочерние блоки располагались во всю ширину страницы вы используете величину vw — 100, чтобы разобраться
+в чем проблема нужно осознать что такое еденица vw, 1 vw — это 1% viewport, ширины текущего открытого окна в браузере пользователя, т.е если он открывает
+страницу с iphone 5, у которого ширина окна 320px, то 100 vw = 3.2px * 100 => 320px, однако я проверяю вашу работу с MacBook Pro, и у меня 100vw
+это 1850px. Получается, что родительский контейнер ограничен 1600px, но дочерние элементы на моем устройстве имеют ширину 1850px. К чему это приводит
+можете посмотреть на скришоте, который я прикладываю ниже
+https://i.imgur.com/E5kHCWA.jpg
+На скриншоте красным цветом — body, зеленым — page. Видно что они спозиционированы как необходимо. Тут все отлично.
+Но блок с контентом выходит за пределы экрана, потому что он имеет ширину большую чем родитель (100vw).
+
+Почему это работает у вас:
+1 вариант: Монитор имеет более низкое разрешение экрана, например 1600.
+2 вариант: Масштаб в браузере установлен так, что страничка с 1600 занимает весь viewport. Попробуйте поменять масштаб и увидите этот баг.
+
+Другой вариант отладки — responsive режим в инструментах разработчика хрома — если вам интересно как этим пользоваться пообщайтесь с вашим наставником.
+
+Как это исправить: Устанавливаем .page — position: relative, 100vw убираем везде где оно сейчас стоит. Заменяем на width: 100%.
+Таким образом дочерний элемент "растянется" до ширины ближайшего родительского блока с position: relative, т.е. до ширины .page.
+
+Как это должно выглядеть после внесения изменений:
+https://i.imgur.com/qi1a9EZ.jpg
+
+В целом впечатления очень хорошие. Качественно усвоена и соблюдается БЭМ методология именования классов. код написан аккуратно
+метатеги указаны все необходимые.
+
+После исправления глобальной ошибки с позиционированием и размерами page и блоков контента, + пометки с припиской "Нужно исправить",
+работа будет принята.
+-->
